@@ -97,7 +97,7 @@ I save the file, and back on my system, I get a connection and I now have access
 
 # Shell as www-data
 
-First things first, I check to see if the server has python3, which I then use to stabilize the shell using the commands
+First things first, I check to see if the server has python3, which I then use to stabilize the shell using the commands:
 
 ```
  python3 -c "import pty;pty.spawn('/bin/bash')"
