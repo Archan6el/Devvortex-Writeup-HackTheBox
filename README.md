@@ -113,7 +113,7 @@ First things first, I check to see if the server has python3. It does, so I use 
 
 From there, I navigate to the home directory and find a user directory, `logan`. I cd in and find the user flag, but when attempting to read it, I find that I don't have access
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/09e79db0-5b96-4e3b-9653-7f1e22adff2d)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a441c655-5b88-4c87-b70c-127dbf06d699)
 
 Looks like we're going to need to log into Logan first
 
