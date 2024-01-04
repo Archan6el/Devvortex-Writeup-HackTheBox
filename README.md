@@ -189,5 +189,4 @@ I click `V` to view the report, which executes `less`. I enter `!/bin/bash`, and
 
 Now that I have root access, I cd into the root directory and cat the root flag:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/9eda7e2f-70fd-4261-b94f-90e5319bd87c)
-
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/5b5a8167-a447-4ecb-82ee-f4401e847654)
