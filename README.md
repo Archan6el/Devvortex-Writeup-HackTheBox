@@ -10,7 +10,7 @@ I add `devvortex.htb` to my `/etc/hosts` file
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a4f886be-9d0e-42ef-aae8-c7622ad3ede9)
 
-## Site
+## Site "devvortex.htb"
 Visitng `http://devvortex.htb`, we are met with this site:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/976241ac-2107-46f0-bf0f-d2f9d2d9cba2)
@@ -28,4 +28,14 @@ After filling in the fields with some fuzz input, like an apostrophe, it becomes
 With the "Contact Us" page leading nowhere, I begin to search for hidden directories using `gobuster`, which doesn't find anything out of the ordinary:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46e154ba-13f7-441c-b042-7707821790a9)
+
+Next, still using `gobuster`, I search for any vhosts, which finds the domain, `dev.devvortex.htb`:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a481b535-33bf-43d3-b1a6-fdda662c2d2b)
+
+I add the domain to my `/etc/hosts` file:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/d6400e15-1ca7-4de6-b65e-3f3bc16a780c)
+
+
 
