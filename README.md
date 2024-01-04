@@ -117,7 +117,7 @@ From there, I navigate to the home directory and find a user directory, `logan`.
 
 Looks like we're going to need to log into Logan first
 
-Looking around the system, I don't find anything that can help me get Logan's password. However, I remember that we have the `mysql` credentials of Lewis, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
+Looking around the system, I don't find anything that can help me get Logan's password. However, I remember that we have the `mysql` credentials of lewis, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/66e50c4f-27b5-4aba-b5a3-4f62b0237886)
 
