@@ -53,8 +53,7 @@ Taking a look at the `administrator` directory, we are met with a `joomla` admin
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85755bf8-826e-4b18-9cf2-db24ab94bc17)
 
-Before fuzzing the log in, I first google to see if there are any exploits for joomla, and I do find an exploit on exploit-db [here](https://www.exploit-db.com/exploits/51334). **CVE:
-2023-23752**
+Before fuzzing the log in, I first google to see if there are any exploits for joomla, and I do find an exploit on exploit-db [here](https://www.exploit-db.com/exploits/51334). **CVE-2023-23752**
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4f16fb3b-9e1a-426f-ade7-f67da3be428a)
 
@@ -116,3 +115,6 @@ From there, I navigate to the home directory and find a user directory, `logan`.
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/09e79db0-5b96-4e3b-9653-7f1e22adff2d)
 
+Looking around the system, I don't find anything that can help me get Logan's password, but eventually after wasting some time I remember that we have the `mysql` credentials of Lewis, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/66e50c4f-27b5-4aba-b5a3-4f62b0237886)
