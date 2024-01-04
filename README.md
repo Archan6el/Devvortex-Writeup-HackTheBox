@@ -178,12 +178,12 @@ It seems that I'll have to make my own crash file or report. Using `man apport-c
 
 I go through the process of reporting a problem. Some problems result in the program just closing, so it takes a while to find a problem that asks me if I want to view the crash report. Eventually I do find one that allows me to view a report, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/0c59d391-76fb-44ba-908d-3d25d5402eb6)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e0d7819d-7446-4ce7-aff6-ef4ad8e8b705)
 
 I click `V` to view the report, which executes `less`. I enter `!/bin/bash`, and I gain root access:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/2c28da38-65d9-4997-8c54-921bd66c525b)
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/52a6bc08-fc7e-4e6b-8ea1-38ec46bf4346)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ee93ba25-7ef0-400a-bc68-1cbe08dc817c)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/bd3617ec-678c-4bad-9bf7-0415a3d55eee)
 
 # Shell as root
 
