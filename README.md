@@ -31,7 +31,7 @@ With the "Contact Us" page leading nowhere, I begin to search for directories us
 
 Next, still using `gobuster`, I search for any vhosts, which finds the domain, `dev.devvortex.htb`:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a481b535-33bf-43d3-b1a6-fdda662c2d2b)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/9fa4efc8-5082-4937-ab70-56bd4aa87d00)
 
 I add the domain to my `/etc/hosts` file:
 
