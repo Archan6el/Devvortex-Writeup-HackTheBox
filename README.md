@@ -49,3 +49,19 @@ Clicking around, there doesn't seem to be any page on the site that accepts user
 
 There is mention to something called `joomla`, but what intrigues me the most is the `administrator` directory. Let's visit it.
 
+Taking a look at the `administrator` directory, we are met with a `joomla` administrator log in page:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85755bf8-826e-4b18-9cf2-db24ab94bc17)
+
+Before fuzzing the log in, I first google to see if there are any exploits for joomla, and I do find an exploit on exploit-db at [https://www.exploit-db.com/exploits/51334](url)
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4f16fb3b-9e1a-426f-ade7-f67da3be428a)
+
+Its an exploit written in ruby. I create a file, `joomla-exploit`, paste the code in, and run it. The file requires one argument, which is the URL of the website. The exploit works, and provides me with information about the database used, but more importantly, log in credentials:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ea6d751c-c497-496d-8c46-2bb8253348f7)
+
+I use these crednetials on the log in page found earlier, and I am logged in:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3beb8247-b2df-49a5-a490-1daf2199be42)
+
