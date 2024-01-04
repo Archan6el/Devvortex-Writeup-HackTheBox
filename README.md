@@ -117,6 +117,73 @@ From there, I navigate to the home directory and find a user directory, `logan`.
 
 Looks like we're going to need to log into Logan first
 
-Looking around the system, I don't find anything that can help me get Logan's password, but eventually after wasting some time I remember that we have the `mysql` credentials of Lewis, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
+Looking around the system, I don't find anything that can help me get Logan's password. However, I remember that we have the `mysql` credentials of Lewis, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/66e50c4f-27b5-4aba-b5a3-4f62b0237886)
+
+# mysql
+
+I list the available databases, and find the database `joomla`:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46f9919c-364f-4625-a98d-7705ce27a6a6)
+
+Listing the available tables shows a long long list of tables within the `joomla` database:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/73df426d-d577-4f3c-b46e-42aa5d8ff2fa)
+
+Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. Thankfully, I don't have to go through the other tables. When viewing the `sd4fg_users` table, I find 2 user names and their corresponding password hashes. One of the users just so happens to be our good friend Logan.
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/1ad1c49a-2988-451a-8baa-fc98bd9e69e6)
+
+I put the usernames and password hashes into a file, `tocrack`:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/b8cc0465-a25b-40c5-9360-a007a646e586)
+
+Using a hash identifier tool, I find that the hashes are bcrypt hashes. I then use john the ripper to crack them:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/5f13b57e-997e-4e76-9f79-a6b23b15547f)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/81091630-1244-4c1d-b525-7b13c35368c1)
+
+Logan's password is `tequieromucho`, while lewis' password remains uncracked, but that's alright. We only needed Logan's anyway. With password in hand, we are able to log into Logan's account:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/26804c5d-8363-4751-bfb1-2626cae9910e)
+
+# Shell as Logan and Privilege Escalation
+
+Now that we have access to Logan's account, we can cat the user flag:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/f91c49e7-122d-45fe-900e-476bc6cd087e)
+
+With the user flag out of the way, now onto the root flag.
+
+Using `sudo -l`, I check to see if Logan has any sudo privileges:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85822e44-3175-4ea3-9ccd-5a24b59c26a3)
+
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you use apport-cli to view a crash report, it'll open a vim like terminal, from which you can run `!/bin/bash`, which will give you a root shell.
+
+I look for any already existing crash files, but there appears to be none:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fccbad99-2a92-4d87-ba17-f743f4254ebf)
+(Terminal UI looks different because the machine was reset, so I ssh'd in directly)
+
+It seems that I'll have to make my own crash file. Using `man apport-cli`, I find that by using the `-f` flag, I can create my own crash file
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a0d5bd74-cd58-4a9c-a4cc-0003749e91f6)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/44c9ef46-a369-4717-817e-e604ea6ed3cb)
+
+I go through the process of creating reporting a problem. Some problems result in the program just closing, so it takes a while to find a problem that asks me if I want to view the crash report. Eventually I do find one that allows me to view a report, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/0c59d391-76fb-44ba-908d-3d25d5402eb6)
+
+I click `V` to view the report, and I get to the vim like terminal. I enter `!/bin/bash`, and I gain root access:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/2c28da38-65d9-4997-8c54-921bd66c525b)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/52a6bc08-fc7e-4e6b-8ea1-38ec46bf4346)
+
+# Shell as root
+
+Now that I have root access, I cd into the root directory and cat the root flag:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/9eda7e2f-70fd-4261-b94f-90e5319bd87c)
+
