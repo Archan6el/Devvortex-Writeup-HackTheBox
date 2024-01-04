@@ -141,7 +141,7 @@ I put the usernames and password hashes into a file, `tocrack`:
 Using a hash identifier tool, I find that the hashes are bcrypt hashes. I then use john the ripper to crack them:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/58b293f8-2f77-41ea-9655-0c94e530e425)
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/2c1f61b7-788b-41a2-9471-87d76d014ae7)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/322de299-618f-42de-a0ff-f01d655db7aa)
 
 Logan's password is `tequieromucho`, while lewis' password remains uncracked, but that's alright. We only needed Logan's anyway. With password in hand, we are able to log into Logan's account:
 
