@@ -37,5 +37,15 @@ I add the domain to my `/etc/hosts` file:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/d6400e15-1ca7-4de6-b65e-3f3bc16a780c)
 
+# Site "dev.devvortex.htb"
 
+Visiting `dev.devvortex.htb`, we are met with this site:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/c0ad3092-4fcb-4863-8a94-11eac46b86e8)
+
+Clicking around, there doesn't seem to be any page on the site that accepts user input. I check to see if this site has a `robots.txt` file, which it does:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/513692e2-9bc0-47c8-ae21-7085c657c253)
+
+There is mention to something called `joomla`, but what intrigues me the most is the `administrator` directory. Let's visit it.
 
