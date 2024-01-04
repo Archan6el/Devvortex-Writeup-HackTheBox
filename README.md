@@ -71,7 +71,7 @@ I then use the credentials on the log in page found earlier, and I'm able to log
 
 # Joomla Dashboard and Reverse Shell
 
-I click around trying to see if there's anything that can lead me to the log in credentials of other users, but I find nothing. Eventually, I finally come across something interesting (which took longer than I'd care to admit)
+I click around trying to see if there's anything that can lead me to the log in credentials of other users, but I find nothing. Eventually, I finally come across something interesting (which took longer than I'd care to admit).
 
 Found in the `System` tab, under Templates, is `Administrator Templates`:
 
