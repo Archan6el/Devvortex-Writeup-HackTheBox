@@ -124,7 +124,7 @@ Looking around the system, I don't find anything that can help me get Logan's pa
 
 I list the available databases, and find the database `joomla`:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46f9919c-364f-4625-a98d-7705ce27a6a6)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/baca860d-047f-405f-9377-83e68b6d621b)
 
 Listing the available tables shows a long long list of tables within the `joomla` database:
 
