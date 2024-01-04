@@ -131,7 +131,7 @@ Listing the available tables shows a long long list of tables within the `joomla
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/73df426d-d577-4f3c-b46e-42aa5d8ff2fa)
 
-Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. Thankfully, I don't have to go through the other tables. When viewing the `sd4fg_users` table, I find 2 user names and their corresponding password hashes. One of the users just so happens to be our good friend Logan.
+Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. Thankfully, I don't have to go through the other tables. When viewing the `sd4fg_users` table, I find 2 usernames and their corresponding password hashes. One of the users just so happens to be our good friend Logan.
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/1ad1c49a-2988-451a-8baa-fc98bd9e69e6)
 
