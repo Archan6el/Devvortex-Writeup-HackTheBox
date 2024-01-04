@@ -25,7 +25,7 @@ Second, I try to find anywhere on the site with user input, which is found in th
 
 After filling in the fields with some fuzz input, like an apostrophe, it becomes clear that clicking "send" only refreshes the page and doesn't actually do anything.
 
-With the "Contact Us" page leading nowhere, I begin to search for hidden directories using `gobuster`, which doesn't find anything out of the ordinary:
+With the "Contact Us" page leading nowhere, I begin to search for directories using `gobuster`, which doesn't find anything out of the ordinary:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46e154ba-13f7-441c-b042-7707821790a9)
 
