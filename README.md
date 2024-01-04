@@ -61,7 +61,15 @@ Its an exploit written in ruby. I create a file, `joomla-exploit`, paste the cod
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ea6d751c-c497-496d-8c46-2bb8253348f7)
 
-I use these crednetials on the log in page found earlier, and I am logged in:
+I attempt to use these credentials to log in to the `lewis` user via SSH, but no dice:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/256065f6-8521-461d-9c23-fa203153ad94)
+
+I then use these crednetials on the log in page found earlier, and I'm logged in:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3beb8247-b2df-49a5-a490-1daf2199be42)
+
+# Joomla Dashboard
+
+
 
