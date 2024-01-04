@@ -27,7 +27,7 @@ After filling in the fields with some fuzz input, like an apostrophe, it becomes
 
 With the "Contact Us" page leading nowhere, I begin to search for directories using `gobuster`, which doesn't find anything out of the ordinary:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46e154ba-13f7-441c-b042-7707821790a9)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4acc2c7a-24f3-43ce-afa5-99d0250a36b6)
 
 Next, still using `gobuster`, I search for any vhosts, which finds the domain, `dev.devvortex.htb`:
 
