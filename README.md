@@ -81,7 +81,7 @@ Clicking here leads us to the server side code of the administrator part of the 
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/89b39c08-9cdd-4a39-847c-fa5d5ed64347)
 
-Bingo. From here, we can code in some php that will establish a reverse shell, which can grant us access to the devvortex server itself
+Bingo. From here, we can code in some php that will establish a reverse shell, which can grant us access to the devvortex server itself. We'll be editing the code of the `index.php` page specifically.
 
 On my system, I create a listener on port 69:
 
