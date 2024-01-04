@@ -162,6 +162,8 @@ Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
 So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you run apport-cli as sudo to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/481d1cd7-bcc4-4fa8-8bc7-9f92588a7987)
+
 I look for any already existing crash files, but there appears to be none:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fccbad99-2a92-4d87-ba17-f743f4254ebf)
