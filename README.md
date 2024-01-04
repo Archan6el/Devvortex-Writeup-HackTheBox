@@ -183,6 +183,7 @@ I go through the process of reporting a problem. Some problems result in the pro
 I click `V` to view the report, which executes `less`. I enter `!/bin/bash`, and I gain root access:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ee93ba25-7ef0-400a-bc68-1cbe08dc817c)
+
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/bd3617ec-678c-4bad-9bf7-0415a3d55eee)
 
 # Shell as root
