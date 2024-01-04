@@ -130,7 +130,9 @@ Listing the available tables shows a long long list of tables within the `joomla
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/73df426d-d577-4f3c-b46e-42aa5d8ff2fa)
 
-Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. Thankfully, I don't have to go through the other tables. When viewing the `sd4fg_users` table, I find 2 usernames and their corresponding password hashes. One of the users just so happens to be our good friend Logan.
+Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. 
+
+Thankfully, I don't have to go through the other tables. When viewing the `sd4fg_users` table, I find 2 usernames and their corresponding password hashes. One of the users just so happens to be our good friend Logan.
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fe03cfd1-7980-4232-bf7d-8ad1d1f63882)
 
@@ -159,7 +161,7 @@ Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/745f395d-2d98-4065-b2e6-6b219e2547b4)
 
-So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you run apport-cli as sudo to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for `apport-cli`. There is one, **CVE-2023-1326**. Essentially, if you run `apport-cli` as sudo to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, giving you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/481d1cd7-bcc4-4fa8-8bc7-9f92588a7987)
 
