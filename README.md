@@ -151,13 +151,13 @@ Logan's password is `tequieromucho`, while lewis' password remains uncracked, bu
 
 Now that we have access to Logan's account, we can cat the user flag:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/f91c49e7-122d-45fe-900e-476bc6cd087e)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/8ddf7977-19a9-403d-afd6-972b9d520f07)
 
 With the user flag out of the way, now onto the root flag.
 
 Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85822e44-3175-4ea3-9ccd-5a24b59c26a3)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/745f395d-2d98-4065-b2e6-6b219e2547b4)
 
 So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you run apport-cli as sudo to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
