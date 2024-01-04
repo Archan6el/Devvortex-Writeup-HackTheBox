@@ -53,7 +53,7 @@ Taking a look at the `administrator` directory, we are met with a `joomla` admin
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85755bf8-826e-4b18-9cf2-db24ab94bc17)
 
-Before fuzzing the log in, I first google to see if there are any exploits for joomla, and I do find an exploit on exploit-db at [https://www.exploit-db.com/exploits/51334]
+Before fuzzing the log in, I first google to see if there are any exploits for joomla, and I do find an exploit on exploit-db at (https://www.exploit-db.com/exploits/51334)
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4f16fb3b-9e1a-426f-ade7-f67da3be428a)
 
