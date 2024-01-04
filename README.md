@@ -166,7 +166,7 @@ I look for any already existing crash files, but there appears to be none:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fccbad99-2a92-4d87-ba17-f743f4254ebf)
 
-It seems that I'll have to make my own crash file. Using `man apport-cli`, I find that by using the `-f` flag, I can create my own crash file
+It seems that I'll have to make my own crash file or report. Using `man apport-cli`, I find that by using the `-f` flag, I can report a problem and view the report
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a0d5bd74-cd58-4a9c-a4cc-0003749e91f6)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/44c9ef46-a369-4717-817e-e604ea6ed3cb)
