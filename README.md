@@ -99,10 +99,13 @@ I save the file, and back on my system, I get a connection and I now have access
 
 First things first, I check to see if the server has python3, which I then use to stabilize the shell using the commands
 
-`python3 -c "import pty;pty.spawn('/bin/bash')"
+```python3 -c "import pty;pty.spawn('/bin/bash')"
+
  export TERM=xterm
+ 
  CTRL + Z
+ 
  stty raw -echo; fg
-`
+```
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/13c9ef47-316b-4cb9-8389-5ae8cace4854)
