@@ -108,8 +108,7 @@ First things first, I check to see if the server has python3. It does, so I use 
  
  stty raw -echo; fg
 ```
-
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46a6f814-dcc2-4c1c-9ae5-472d5179423c)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/777a6796-7b2b-4868-85e2-4f0089d978d2)
 
 From there, I navigate to the home directory and find a user directory, `logan`. I cd in and find the user flag, but when attempting to read it, I find that I don't have access
 
