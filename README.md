@@ -15,8 +15,17 @@ Visitng `http://devvortex.htb`, we are met with this site:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/976241ac-2107-46f0-bf0f-d2f9d2d9cba2)
 
-First, I try to find anywhere on the site with user input, which is found in the "contact us" tab of the website:
+First, I look for `robots.txt`, but this site appears to not have one:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/1b2d6a03-f35d-4d0e-bd9b-8f07f8995dcd)
+
+Second, I try to find anywhere on the site with user input, which is found in the "Contact Us" page of the website:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/6d027f99-e7a6-49cb-aa7d-f0c22bd690a7)
 
 After filling in the fields with some fuzz input, like an apostrophe, it becomes clear that clicking "send" only refreshes the page and doesn't actually do anything.
+
+With the "Contact Us" page leading nowhere, I begin to search for hidden directories using `gobuster`, which doesn't find anything out of the ordinary:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46e154ba-13f7-441c-b042-7707821790a9)
+
