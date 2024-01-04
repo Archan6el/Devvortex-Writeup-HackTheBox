@@ -160,11 +160,12 @@ Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85822e44-3175-4ea3-9ccd-5a24b59c26a3)
 
-So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you use apport-cli to view a crash report, it'll open a vim like terminal, from which you can run `!/bin/bash`, which will give you a root shell.
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you use apport-cli to view a crash report, it'll open a vim like terminal, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://github.com/diego-tella/CVE-2023-1326-PoC)
 
 I look for any already existing crash files, but there appears to be none:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fccbad99-2a92-4d87-ba17-f743f4254ebf)
+
 (Terminal UI looks different because the machine was reset, so I ssh'd in directly)
 
 It seems that I'll have to make my own crash file. Using `man apport-cli`, I find that by using the `-f` flag, I can create my own crash file
