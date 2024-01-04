@@ -166,7 +166,7 @@ So logan can use sudo on something called `apport-cli`. I google to see if there
 
 Before we go any further though, I'm going to ssh into logan since I'm starting to miss my more colorful terminal:
 
-![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/76387132-fcab-42fa-8052-8614cdbe2184)
+![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e9f69ae4-97f4-4596-afb7-b591f117d0ed)
 
 I look for any already existing crash files, but there appears to be none:
 
