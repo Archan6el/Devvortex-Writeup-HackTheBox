@@ -160,7 +160,7 @@ Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85822e44-3175-4ea3-9ccd-5a24b59c26a3)
 
-So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you use apport-cli to view a crash report, it'll open a vim like terminal, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://github.com/diego-tella/CVE-2023-1326-PoC)
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for apport-cli. There is one, **CVE-2023-1326**. Essentially, if you use apport-cli to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, which will give you a root shell. Specific details can be found [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
 I look for any already existing crash files, but there appears to be none:
 
@@ -177,7 +177,7 @@ I go through the process of creating reporting a problem. Some problems result i
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/0c59d391-76fb-44ba-908d-3d25d5402eb6)
 
-I click `V` to view the report, and I get to the vim like terminal. I enter `!/bin/bash`, and I gain root access:
+I click `V` to view the report, which executes `less`. I enter `!/bin/bash`, and I gain root access:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/2c28da38-65d9-4997-8c54-921bd66c525b)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/52a6bc08-fc7e-4e6b-8ea1-38ec46bf4346)
