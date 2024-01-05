@@ -165,7 +165,7 @@ Now that we have access to Logan's account, we can cat the user flag:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/8ddf7977-19a9-403d-afd6-972b9d520f07)
 
-With the user flag out of the way, now onto the root flag.
+That's the user flag out of the way, now onto the root flag.
 
 Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
