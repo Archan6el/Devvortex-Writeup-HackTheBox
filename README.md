@@ -59,6 +59,8 @@ Taking a look at the `administrator` directory, we are met with a `joomla` admin
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85755bf8-826e-4b18-9cf2-db24ab94bc17)
 
+## Joomla Exploit
+
 Before I lightly fuzz the log in, I first google to see if there are any exploits for joomla, and I find **CVE-2023-23752** on exploit-db [here](https://www.exploit-db.com/exploits/51334). 
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4f16fb3b-9e1a-426f-ade7-f67da3be428a)
@@ -176,6 +178,8 @@ So logan can use sudo on something called `apport-cli`. I google to see if there
 Before we go any further though, I'm going to ssh into logan since I'm starting to miss my more colorful terminal:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e9f69ae4-97f4-4596-afb7-b591f117d0ed)
+
+## apport-cli Privilege Escalation
 
 I look for any already existing crash files, but there appears to be none:
 
