@@ -186,7 +186,7 @@ It seems that I'll have to make my own crash file or report. Using `man apport-c
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4d06abc2-170b-43f2-8e9b-1d95bf746d81)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ef1152f6-a50f-4a1d-87ff-62d3177bfbb1)
 
-I go through the process of reporting a problem. Some problems result in the program just closing, so it took some trial and error to find a problem that asks me if I want to view the crash report. Eventually I do find one that allows me to view a report, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
+I go through the process of reporting a problem. Some problems result in the program just closing, so it took some trial and error to find a problem that asks me if I want to view the crash report. Eventually I do find one that does, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e0d7819d-7446-4ce7-aff6-ef4ad8e8b705)
 
