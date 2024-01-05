@@ -157,7 +157,7 @@ Logan's password is `tequieromucho`, while lewis' password remains uncracked, bu
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/26804c5d-8363-4751-bfb1-2626cae9910e)
 
-# Shell as Logan and Privilege Escalation
+# Shell as logan and Privilege Escalation
 
 Now that we have access to Logan's account, we can cat the user flag:
 
