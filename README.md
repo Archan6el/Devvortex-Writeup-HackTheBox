@@ -45,7 +45,7 @@ I add the domain to my `/etc/hosts` file:
 
 # Site "dev.devvortex.htb"
 
-Visiting `dev.devvortex.htb`, we are met with this site:
+Visiting `dev.devvortex.htb`, we are met with a site for a web design company:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/c0ad3092-4fcb-4863-8a94-11eac46b86e8)
 
