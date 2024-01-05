@@ -1,7 +1,7 @@
 # Devvortex-Writeup
 A write-up of the Hack The Box devvortex machine for the TAMU Cybersecurity Club 
 
-| Box Info | |
+| Box Info |![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/5f84b768-48e7-444f-9f8d-4581194771d2)|
 | --- | --- |
 | Name | [Devvortex](https://app.hackthebox.com/machines/Devvortex) |
 | OS | Linux |
