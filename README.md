@@ -43,7 +43,7 @@ I add the domain to my `/etc/hosts` file:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/d6400e15-1ca7-4de6-b65e-3f3bc16a780c)
 
-# Site "dev.devvortex.htb"
+## Site "dev.devvortex.htb"
 
 Visiting `dev.devvortex.htb`, we are met with a site for a web design company:
 
@@ -77,7 +77,7 @@ I then use the credentials on the log in page found earlier, and I'm able to log
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3beb8247-b2df-49a5-a490-1daf2199be42)
 
-# Joomla Dashboard and Reverse Shell
+## Joomla Dashboard and Reverse Shell
 
 I click around trying to see if there's anything that can lead me to the log in credentials of other users, but I find nothing. Eventually, I finally come across something interesting (which took longer than I'd care to admit).
 
@@ -103,7 +103,7 @@ I save the file, and back on my system, I get a connection and I now have access
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a2d3cf3b-928f-4ed9-a42e-b54ab5626158)
 
-# Shell as www-data
+## Shell as www-data
 
 First things first, I check to see if the server has python3. It does, so I use it to stabilize the shell using the following commands:
 
@@ -128,7 +128,7 @@ Looking around the system, I don't find anything that can help me get Logan's pa
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3ce50099-f77a-422b-b1d7-a6f624385a36)
 
-# mysql
+## mysql
 
 I list the available databases, and find the database `joomla`:
 
@@ -157,7 +157,7 @@ Logan's password is `tequieromucho`, while lewis' password remains uncracked, bu
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/26804c5d-8363-4751-bfb1-2626cae9910e)
 
-# Shell as logan and Privilege Escalation
+## Shell as logan and Privilege Escalation
 
 Now that we have access to Logan's account, we can cat the user flag:
 
@@ -198,7 +198,7 @@ I click `V` to view the report, which executes `less`. I enter `!/bin/bash`, and
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/bd3617ec-678c-4bad-9bf7-0415a3d55eee)
 
-# Shell as root
+## Shell as root
 
 Now that I have root access, I cd into the root directory and cat the root flag:
 
