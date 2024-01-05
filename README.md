@@ -1,6 +1,10 @@
 # Devvortex-Writeup
 A write-up of the Hack The Box devvortex machine for the TAMU Cybersecurity Club 
 
+| ------------- | ------------- |
+|     Name      |   Devvortex   |
+| Content Cell  | Content Cell  |
+
 ## Recon
 `nmap` scan reveals that ports 22 (SSH) and 80 (HTTP) are open. Additionally, the scan shows a redirect to `http://devvortex.htb/`
 
