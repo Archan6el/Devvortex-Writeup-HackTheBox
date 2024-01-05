@@ -3,7 +3,7 @@ A write-up of the Hack The Box devvortex machine for the TAMU Cybersecurity Club
 
 | Box Info | |
 | --- | --- |
-| Name | Devvortex |
+| Name | [Devvortex](https://app.hackthebox.com/machines/Devvortex) |
 | OS | Linux |
 | Difficulty | Easy |
 
