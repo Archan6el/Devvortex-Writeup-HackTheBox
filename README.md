@@ -169,7 +169,7 @@ Using `sudo -l`, I check to see if Logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/745f395d-2d98-4065-b2e6-6b219e2547b4)
 
-So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for `apport-cli`. There is one, **CVE-2023-1326**. Essentially, if you run `apport-cli` as sudo to view a crash report, it'll execute `less`, from which you can run `!/bin/bash`, giving you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for `apport-cli`. There is one, **CVE-2023-1326**. Essentially, if you run `apport-cli` as sudo to view a report, it'll execute `less`, from which you can run `!/bin/bash`, giving you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/481d1cd7-bcc4-4fa8-8bc7-9f92588a7987)
 
@@ -186,7 +186,7 @@ It seems that I'll have to make my own crash file or report. Using `man apport-c
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4d06abc2-170b-43f2-8e9b-1d95bf746d81)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/ef1152f6-a50f-4a1d-87ff-62d3177bfbb1)
 
-I go through the process of reporting a problem. Some problems result in the program just closing, so it took some trial and error to find a problem that asks me if I want to view the crash report. Eventually I do find one that does, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
+I go through the process of reporting a problem. Some problems result in the program just closing, so it took some trial and error to find a problem that asks me if I want to view the a report. Eventually I do find one that does, which was a security related problem (option 3), and the specific issue was "My screen doesn't lock automatically after being idle" (option 7):
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/e0d7819d-7446-4ce7-aff6-ef4ad8e8b705)
 
