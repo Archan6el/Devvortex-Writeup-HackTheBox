@@ -181,7 +181,7 @@ Before we go any further though, I'm going to ssh into logan since I'm starting 
 
 ## apport-cli Privilege Escalation
 
-I look for any already existing crash files, but there appears to be none:
+I look for any already existing `.crash` files (The file type of Apport reports) in the  `/var/crash` directory which is where they are usually stored, but there appears to be none:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fccbad99-2a92-4d87-ba17-f743f4254ebf)
 
