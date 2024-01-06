@@ -155,7 +155,7 @@ Using a hash identifier tool, I find that the hashes are bcrypt hashes. I then u
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/58b293f8-2f77-41ea-9655-0c94e530e425)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/322de299-618f-42de-a0ff-f01d655db7aa)
 
-Logan's password is `tequieromucho`, while lewis' password remains uncracked, but that's alright. We only needed Logan's anyway. With password in hand, we are able to log into Logan's account:
+Logan's password is `tequieromucho`. With that in hand, we are able to log into Logan's account:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/26804c5d-8363-4751-bfb1-2626cae9910e)
 
