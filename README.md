@@ -71,7 +71,7 @@ The exploit on exploit-db is written in ruby. I create a file, `joomla-exploit`,
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3c2e5f4b-ce81-46e3-9108-9cb8a2b9a9a7)
 
-I attempt to use these credentials to log in to the `lewis` user via SSH, but no dice:
+I attempt to use these credentials to log in to a `lewis` user, if one exists, via SSH but no dice:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/256065f6-8521-461d-9c23-fa203153ad94)
 
