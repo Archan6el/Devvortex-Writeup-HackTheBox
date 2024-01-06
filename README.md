@@ -126,9 +126,9 @@ From there, I navigate to the home directory and find a user directory, `logan`.
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/9a5dee22-acbd-4483-9fc2-4b2be0d8f32e)
 
-Looks like we're going to need to log into Logan first
+Looks like we're going to need to log into logan first
 
-Looking around the system, I don't find anything that can help me get Logan's password. However, we do have the `mysql` credentials of `lewis`, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
+Looking around the system, I don't find anything that can help me get logan's password. However, we do have the `mysql` credentials of `lewis`, which was found when we used the **CVE-2023-23752** exploit earlier. Using those credentials, I am able to log into `mysql`
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3ce50099-f77a-422b-b1d7-a6f624385a36)
 
@@ -144,7 +144,7 @@ Listing the available tables shows a long long list of tables within the `joomla
 
 Since we are looking for user credentials, I start with the `sd4fg_users` table. From there, I'll go through all the other tables relating to users. 
 
-However, when viewing the `sd4fg_users` table, I find 2 usernames and their corresponding password hashes. One of the users just so happens to be our good friend Logan. Thankfully I won't have to go through all those other tables.
+However, when viewing the `sd4fg_users` table, I find 2 usernames and their corresponding password hashes. One of the users just so happens to be our good friend logan. The other is lewis, whose password we already know because of the joomla exploit used earlier. Thankfully I won't have to go through all those other tables.
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/fe03cfd1-7980-4232-bf7d-8ad1d1f63882)
 
@@ -157,19 +157,19 @@ Using a hash identifier tool, I find that the hashes are bcrypt hashes. I then u
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/58b293f8-2f77-41ea-9655-0c94e530e425)
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/322de299-618f-42de-a0ff-f01d655db7aa)
 
-Logan's password is `tequieromucho`. With that in hand, we are able to log into Logan's account:
+Logan's password is `tequieromucho`. With that in hand, we are able to log into logan's account:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/26804c5d-8363-4751-bfb1-2626cae9910e)
 
 ## Shell as logan and Privilege Escalation
 
-Now that we have access to Logan's account, we can cat the user flag:
+Now that we have access to logan's account, we can cat the user flag:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/8ddf7977-19a9-403d-afd6-972b9d520f07)
 
 That's the user flag out of the way, now onto the root flag.
 
-Using `sudo -l`, I check to see if Logan has any sudo privileges:
+Using `sudo -l`, I check to see if logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/745f395d-2d98-4065-b2e6-6b219e2547b4)
 
