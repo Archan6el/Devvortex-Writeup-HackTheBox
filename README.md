@@ -173,7 +173,7 @@ Using `sudo -l`, I check to see if logan has any sudo privileges:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/745f395d-2d98-4065-b2e6-6b219e2547b4)
 
-So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for `apport-cli`. There is one, **CVE-2023-1326**. Essentially, if you run `apport-cli` as sudo to view a report, it'll execute `less`, from which you can run `!/bin/bash`, giving you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
+So logan can use sudo on something called `apport-cli`. I google to see if there are any known privilege escalation exploits for `apport-cli`. There is one, **CVE-2023-1326**. Essentially, if you run `apport-cli` as sudo to view a report, it'll execute `less`, from which you can run `!/bin/bash` giving you a root shell. Specific details can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-1326) and [here](https://diegojoelcondoriquispe.medium.com/cve-2023-1326-poc-c8f2a59d0e00)
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/481d1cd7-bcc4-4fa8-8bc7-9f92588a7987)
 
