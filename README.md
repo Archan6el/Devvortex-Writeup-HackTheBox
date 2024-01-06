@@ -53,7 +53,7 @@ Clicking around, there doesn't seem to be any page on the site that accepts user
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/513692e2-9bc0-47c8-ae21-7085c657c253)
 
-There is mention to something called *joomla*, but what intrigues me the most is the `administrator` directory. Let's visit it.
+There is mention to something called **joomla**, but what intrigues me the most is the `administrator` directory. Let's visit it.
 
 Taking a look at the `administrator` directory, we are met with a joomla administrator log in page:
 
