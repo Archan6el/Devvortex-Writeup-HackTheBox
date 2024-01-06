@@ -53,9 +53,9 @@ Clicking around, there doesn't seem to be any page on the site that accepts user
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/513692e2-9bc0-47c8-ae21-7085c657c253)
 
-There is mention to something called `joomla`, but what intrigues me the most is the `administrator` directory. Let's visit it.
+There is mention to something called *joomla*, but what intrigues me the most is the `administrator` directory. Let's visit it.
 
-Taking a look at the `administrator` directory, we are met with a `joomla` administrator log in page:
+Taking a look at the `administrator` directory, we are met with a joomla administrator log in page:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/85755bf8-826e-4b18-9cf2-db24ab94bc17)
 
@@ -65,7 +65,7 @@ Before I lightly fuzz the log in, I first google to see if there are any exploit
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/4f16fb3b-9e1a-426f-ade7-f67da3be428a)
 
-The exploit appears to be an "improper access check in `joomla` that allows for unauthorized access to webservice endpoints", according to NIST. More detail can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-23752). 
+The exploit appears to be an "improper access check in joomla that allows for unauthorized access to webservice endpoints", according to NIST. More detail can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-23752). 
 
 Exploit-db refers to it as an "unauthenticated information disclosure" exploit. Let's see what information we can get, shall we?
 
