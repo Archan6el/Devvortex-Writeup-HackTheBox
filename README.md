@@ -17,7 +17,7 @@ I add `devvortex.htb` to my `/etc/hosts` file
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/a4f886be-9d0e-42ef-aae8-c7622ad3ede9)
 
 ## Site "devvortex.htb"
-Visitng `http://devvortex.htb`, we are met with a site for what looks like some kind of service provider:
+Visiting `http://devvortex.htb`, we are met with a site for what looks like some kind of service provider:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/976241ac-2107-46f0-bf0f-d2f9d2d9cba2)
 
