@@ -67,9 +67,9 @@ Before I lightly fuzz the log in, I first google to see if there are any exploit
 
 The exploit appears to be an "improper access check in `joomla` that allows for unauthorized access to webservice endpoints", according to NIST. More detail can be found [here](https://nvd.nist.gov/vuln/detail/CVE-2023-23752). 
 
-Exploit-db classifies it as an "unauthenticated information disclosure" exploit. Let's see what information we can get, shall we?
+Exploit-db refers to it as an "unauthenticated information disclosure" exploit. Let's see what information we can get, shall we?
 
-The exploit on exploit-db is written in ruby. I create a file, `joomla-exploit`, paste the code in, and run it. The file requires one argument, which is the URL of the website. The exploit works, and provides me with information about the database used, but more importantly, log in credentials:
+The exploit POC is written in ruby. I create a file, `joomla-exploit`, paste the code in, and run it. The file requires one argument, which is the URL of the website. The exploit works, and provides me with information about the database used, but more importantly, log in credentials:
 
 ![image](https://github.com/Archan6el/Devvortex-Writeup/assets/91164464/3c2e5f4b-ce81-46e3-9108-9cb8a2b9a9a7)
 
